@@ -36,13 +36,20 @@
 // if(a%4===0 && a%100>0 || a%100<0  ){
 //     console.log("nahanj tari")
 // }else if(a%400===0){
-//     console.log("nahanj tari")
+//     console.log("nahanj tari")   
 // }else{
 //     console.log("voch nahanj tari")
 // }
 
 
 
+// let slide=document.querySelector('.slide')
+// function changeImage(){
+//     slide.src=arr[i];
+//     if(i<arr.length-1){
+//         i++
+//     }else{
 
-
-
+//     }
+// }
+// setInterval(changeImage,1000)
