@@ -1,45 +1,3 @@
-// let a = 5
-// let b =6
-// if(a>b && a>3){
-// console.log(a**2+b**2);
-// }
-// else{
-//     console.log(a**3+b**3)
-// }
-   
-
-
-
-// let a=5
-// let b=6
-// let c=7
-// if(a>b && c>b){
-//     console.log(a**2+c**2);
-// }else if(b>a && c>a){
-//     console.log(b**2+c**2);
-// }else{
-//     console.log(a**2+b**2);  
-// }
-
-// let a = prompt("")
-// if(a>0){
-//     console.log(+a)
-// }else if (a=0){
-//     console.log(0)
-// }else{
-//     console.log(-a)
-// }
-
-
-
-// let a=prompt("")
-// if(a%4===0 && a%100>0 || a%100<0  ){
-//     console.log("nahanj tari")
-// }else if(a%400===0){
-//     console.log("nahanj tari")   
-// }else{
-//     console.log("voch nahanj tari")
-// }
 
 
 
@@ -53,3 +11,76 @@
 //     }
 // }
 // setInterval(changeImage,1000)
+
+
+// ***************************************************
+// let images=document.querySelectorAll('.item'); 
+
+// let currentElIndex=0; 
+// let newElIndex=0; 
+
+
+// function changeSilder(){ 
+//   if(newElIndex===-1){ 
+//     newElIndex=images.length-1 
+//   }else if(newElIndex===images.length){ 
+//     newElIndex=0; 
+//   } 
+//   images[currentElIndex].classList.remove('item-2'); 
+//   images[newElIndex].classList.add('item-2'); 
+//   currentElIndex=newElIndex 
+// } 
+
+// setInterval(function(){ 
+//   newElIndex++; 
+//   changeSilder() 
+// },1000); 
+// changeSilder()
+
+
+
+// function f1(a){
+//     return((a-(a%100))/100)+1
+// }
+// console.log(f1(2021)+" " + "dar");
+
+// let n  = +prompt("");
+// let sum = 0
+// for(let i=0;i<=n;i++){
+// 	sum +=i
+// }console.log(sum)
+
+
+//  const body = document.querySelector("body");
+//  const overlay = document.querySelector("#overlay");
+//  body.addEventListener("click", () => {
+//    overlay.classList.toggle("dark-mode");
+//    body.classList.toggle("darkmood");
+//  });
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+
+}
+
+// const togglebutton = document.getElementsByClassName("dark-mode");
+// const navbarlink = document.getElementsByClassName("light-mode");
+// togglebutton.addEventListener("click",() =>{
+//   navbarlink.classList.toggle("");
+//   togglebutton.addEventListener.toggle("Lightmood")
+
+// })
+const btn = document.getElementById("myButton1");
+btn.addEventListener('click', () => {
+  if(btn.innerText === 'Dark') {
+    btn.innerText = 'Light';
+    // document.getElementById("myButton1").style.backgroundColor= "black";
+    // document.getElementById("myButton1").style.color= "white";
+  }
+  else {
+    btn.innerText = 'Dark';
+    document.getElementById("myButton1").style.backgroundColor= "white";
+    document.getElementById("myButton1").style.color= "black";
+  }
+});
+
